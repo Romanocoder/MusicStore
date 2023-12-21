@@ -1,0 +1,40 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    gap: 2rem;
+    align-items: center;
+    
+    
+    .txt p {
+        max-width: 50%;
+        color: #fafafa;
+        font-size: 1.5rem;
+ 
+    } 
+     
+    
+    .picture{
+        max-width: 500px;
+        img{
+            width: 100%;
+            min-width: 10rem; 
+            border-radius: 5px;
+            filter: grayscale(50%);
+ 
+            &:hover{
+
+                filter: grayscale(0);
+            }
+
+        }
+
+     
+  
+  
+  
+
+}
+
+}

@@ -1,0 +1,41 @@
+.cartas-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 60%;
+    height: 50%;
+    margin: 5rem auto;
+    gap: 2rem;
+    align-items: stretch;
+
+    .carta {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: solid 1px;
+        padding: 1rem;
+        min-height: 20%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        filter: drop-shadow(5px 7px 10px);
+        overflow: hidden;
+        
+        &:hover img{
+            transform: scale(1.2);
+        }
+         
+        
+
+        .producto {
+            display: block;
+            flex-grow: 1;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: 1s;
+        }
+    }
+}

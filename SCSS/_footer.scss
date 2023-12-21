@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #1a1a1a;
+    
+    .redesFooter{
+        width: 2rem;
+        transition: 2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    ul {
+        left: 0;
+        list-style: none;
+    }
+
+    .copyEmail {
+        
+        display: flex;
+        justify-content: center;
+        font-size: 0.85em;
+        margin: 0 auto;
+        
+    }
+
+    .contacto{
+        padding: 1rem;
+    }
+}

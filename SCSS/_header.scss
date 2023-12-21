@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+    width: 100%;
+    height: 90vh;
+    padding: 2rem; 
+    background-image: url(../assets/bannerMusic.jpg);
+    background-size: cover;
+
+
+    
+    .logo {
+        max-width: 3rem;
+        filter: drop-shadow(5px 8px 12px);
+    }
+    
+    .nav {
+        display: flex;
+        align-items: center; 
+        gap: 1rem;
+        
+
+        li{
+            list-style: none;
+            gap: 2rem;
+            
+            a {
+                text-decoration: none;
+                color: yellow;
+                padding: 1rem;
+                margin: 0 2rem;  
+                transition: 1s;
+                border-radius: 5%;
+                font-weight: bold;
+                background-color: #1a1a1a;
+                transition: 1s;   
+
+                &:hover {
+                    border: solid 1px grey; 
+                 }
+                 
+
+
+                
+                
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+header .nav {
+  display: flex;
+  gap: 1rem;
+}
+header .nav li {
+  list-style: none;
+  gap: 2rem;
+}
+header .nav li a {
+  text-decoration: none;
+  color: #ececec;
+  padding: 1rem;
+  transition: 1s;
+  border-radius: 5%;
+}
+header .nav li a:hover {
+  background-color: #1a1a1a;
+}
+header .logo {
+  max-width: 3rem;
+}
+
+body {
+  background-color: #2471A3;
+}
+body h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #1a1a1a;
+}
+footer .redesFooter {
+  width: 2rem;
+  transition: 2s;
+}
+footer .redesFooter:hover {
+  transform: scale(1.2);
+}
+footer ul {
+  left: 0;
+  list-style: none;
+}
+footer .copyEmail {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}/*# sourceMappingURL=styles.css.map */
