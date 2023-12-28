@@ -8,6 +8,16 @@
     gap: 2rem;
     align-items: stretch;
 
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
     .carta {
         display: flex;
         flex-direction: column;
