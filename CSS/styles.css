@@ -72,6 +72,9 @@ header .nav li a:hover {
   header .nav li {
     margin: 1rem 0;
   }
+  header .nav li a {
+    width: 100%;
+  }
   header .visible {
     opacity: 1;
     overflow: visible;
