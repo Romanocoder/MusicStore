@@ -9,6 +9,12 @@ header {
     padding: 2rem;
     background-image: url(../assets/bannerMusic.jpg);
     background-size: cover;
+    
+    .abrir__menu{
+        width: 1.5rem;
+        color:#FFFF00;
+        display: none;
+    }
 
     .logo {
         max-width: 3rem;
@@ -20,6 +26,14 @@ header {
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        .cerrar__menu{
+            width: 1.5rem;
+            color:#FFFF00;
+            display: none;
+            
+        }
+        
 
         li {
             list-style: none;
@@ -45,16 +59,47 @@ header {
 
     /* medias queries */
     @media (max-width: 768px) {
-        height: auto; 
+        
+        .abrir__menu{
+            width: 1.5rem;
+            color:#FFFF00;
+            display: block;
+        }
+
+         
 
         .nav {
+            position: absolute;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: flex-end;
+            left: 0;
             gap: 0.5rem;
+            opacity: 0;
+            visibility: hidden;
+           
+            
+            .cerrar__menu{
+                width: 1.5rem;
+                color:#FFFF00;
+                display: block;
+                
+            }
 
             li {
                 margin: 1rem 0;
             }
         }
-    }
+
+        .visible{
+            opacity: 1;
+            overflow: visible;
+            background-color: #000;
+            top: 0;
+            padding-bottom:2.1rem ;
+                        
+            
+        }
+
+        
+}
 }

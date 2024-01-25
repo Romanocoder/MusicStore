@@ -12,6 +12,11 @@ header {
   background-size: cover;
   /* medias queries */
 }
+header .abrir__menu {
+  width: 1.5rem;
+  color: #FFFF00;
+  display: none;
+}
 header .logo {
   max-width: 3rem;
   filter: drop-shadow(5px 8px 12px);
@@ -20,6 +25,11 @@ header .nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+header .nav .cerrar__menu {
+  width: 1.5rem;
+  color: #FFFF00;
+  display: none;
 }
 header .nav li {
   list-style: none;
@@ -40,16 +50,34 @@ header .nav li a:hover {
   border: solid 1px grey;
 }
 @media (max-width: 768px) {
-  header {
-    height: auto;
+  header .abrir__menu {
+    width: 1.5rem;
+    color: #FFFF00;
+    display: block;
   }
   header .nav {
+    position: absolute;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    left: 0;
     gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+  }
+  header .nav .cerrar__menu {
+    width: 1.5rem;
+    color: #FFFF00;
+    display: block;
   }
   header .nav li {
     margin: 1rem 0;
+  }
+  header .visible {
+    opacity: 1;
+    overflow: visible;
+    background-color: #000;
+    top: 0;
+    padding-bottom: 2.1rem;
   }
 }
 
@@ -152,13 +180,13 @@ section .picture img:hover {
 @media (max-width: 768px) {
   .cartas-productos {
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
+    width: 40%;
   }
 }
 @media (max-width: 576px) {
   .cartas-productos {
     grid-template-columns: 1fr;
-    width: 90%;
+    width: 40%;
   }
 }
 .cartas-productos .carta {
@@ -187,4 +215,4 @@ section .picture img:hover {
   transition: 1s;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=Styles.css.map */
